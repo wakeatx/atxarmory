@@ -1,0 +1,129 @@
+//
+// Utilities
+// --------------------------------------------------
+
+// Set the container width, and override it for fixed navbars in media queries
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  (@grid-gutter-width / 2);
+  padding-right: (@grid-gutter-width / 2);
+  max-width: 1000px;
+  .clearfix();
+}
+
+// Reset the box-sizing
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+// Clearfix
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+// .center-vert {
+//   position: relative;
+//   top: 50%;
+//   transform: translateY(-50%);
+//   -webkit-transform: translateY(-50%);
+//   -ms-transform: translateY(-50%);
+//   transform: translateY(-50%);
+// }
+
+.margin-bottom-xsmall {
+  margin-bottom: 5px;
+}
+
+.margin-bottom-small {
+  margin-bottom: 10px;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 20px;
+}
+
+.margin-bottom-large {
+  margin-bottom: 30px;
+}
+
+
+.padding-bottom-xsmall {
+  padding-bottom: 5px;
+}
+
+.padding-bottom-small {
+  padding-bottom: 10px;
+}
+
+.padding-bottom-medium {
+  padding-bottom: 20px;
+}
+
+.padding-bottom-large {
+  padding-bottom: 30px;
+}
+
+.padding-top-xsmall {
+  padding-top: 5px;
+}
+
+.padding-top-small {
+  padding-top: 10px;
+}
+
+.padding-top-medium {
+  padding-top: 20px;
+}
+
+.padding-top-large {
+  padding-top: 30px;
+}
+
+
+
+
+.border-bottom {
+  border-bottom: 1px solid white;
+}
+
+.border-top {
+  border-top: 1px solid white;
+}
+
+.border-right {
+  border-right: 1px solid white;
+}
+
+.border-left {
+  border-left: 1px solid white;
+}
+
+
+
+
+
